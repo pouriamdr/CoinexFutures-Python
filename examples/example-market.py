@@ -1,7 +1,7 @@
 from ..CoinexFutures import CoinexFutures
 import os
 
-class MarketBot:
+class TakerBot:
     def __init__(self) -> None:
         self.coinex = CoinexFutures('YOUR ACCESSID HERE','YOUR SECRET KEY HERE', 20) # ( access id, secret key, re-tries of connection to coinex in each call )
         self.commands = {'clear': 'clear', 'slash': '/'}
@@ -69,7 +69,4 @@ class MarketBot:
             None
         print('Done.')
 
-market_obj = MarketBot()
-        
-
-
+market_obj = TakerBot()
